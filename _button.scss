@@ -1,0 +1,47 @@
+@mixin but($c,$bg,$br){
+    color: $c;
+    background-color: $bg;
+    border-radius: $br;
+}
+.refer{
+    padding:15px;
+    @include but(rgb(87,178,179),rgb(238,255,247),5px);
+    border: 1px solid rgb(87,178,179);
+    
+}
+.login{
+    padding:15px 35px 15px 35px;
+    @include but(white,blue,5px);
+    margin-left: 15px;
+    border: none;
+}
+.all{
+    padding:20px 25px 20px 25px;
+    @include but(white,blue,5px);
+    border: none;
+    font-weight: 200;
+    font-size: 20px;
+}
+.web{
+    padding:20px;
+    font-weight: 200;
+    font-size: 20px;
+    @include but(black,white,5px);
+    border: none;
+    margin-left: 15px;
+}
+.master{
+    padding:20px;
+    @include but(black,white,5px);
+    border: none;
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.register{
+    padding:15px;
+    @include but(white,blue,5px);
+    border: none;
+    font-weight: 200;
+    font-size: 14px;
+}
